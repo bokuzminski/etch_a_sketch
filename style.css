@@ -1,3 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(230, 228, 220, 0.753);
+}
+h2 {
+    text-align: center;
+    margin: 4vh;
+    font-family: 'League Script', cursive;
+    color: rgb(102, 139, 170);
+    font-size: 2vw;
+}
 .cell {
     border: 1px rgba(0, 0, 0, 0.336) solid;
     background-color: rgba(255, 255, 255, 1);
@@ -12,8 +24,30 @@
 #grid-container {
     display: grid;
     background-color: beige;
-    height: 50vw;
-    width: 50vw;
+    height: 40vw;
+    width: 40vw;
     box-sizing: content-box;
     border: 1px rgba(0, 0, 0, 0.336) solid;
+    float: right;
+    margin-right: 5vw;
+    margin-top: 1vw;
+}
+.left {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 5vw;
+    margin-top: 1vw;
+    height: 200px;
+}
+button {
+    background-color: rgb(152, 169, 201);
+    height: 30px;
+    width: 150px;
+    border-radius: 15px;
+    border: 0;
+}
+#clear {
+    position: relative;
 }
