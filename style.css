@@ -1,0 +1,14 @@
+.cell {
+    border: 1px solid;
+    background-color: chocolate;
+}
+
+#grid-container {
+    display: grid;
+    background-color: beige;
+    padding: 10px;
+    height: 30vw;
+    width: 30vw;
+    box-sizing: content-box;
+    border: 1px black solid;
+}
