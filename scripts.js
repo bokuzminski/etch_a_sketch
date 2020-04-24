@@ -17,7 +17,6 @@ newButton.addEventListener('click', function () { createGrid(slider.value) });
 resetButtton.addEventListener('click', function () { clear() });
 container.addEventListener('click', function () { toggleDrawing() });
 
-
 createGrid(baseCellCount);
 
 function createGrid(gridSize) {
@@ -27,12 +26,10 @@ function createGrid(gridSize) {
     container.style.gridTemplateRows = (`repeat(${gridSize}, 1fr`);
     for (let i = 0; i < cellNumber; i++) {
         cell[i] = document.createElement('div');
-        cell[i].setAttribute("class", "cell");
+        cell[i].classList.add("cell");
         container.appendChild(cell[i]);
     }
 }
-
-
 
 function activatePen(e) {
     e.target.classList.add('active');
